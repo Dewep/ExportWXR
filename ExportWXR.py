@@ -3,8 +3,6 @@
 
 import pymysql
 from contextlib import closing
-import unidecode
-import re
 
 
 class ExportWXR(object):

@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 
 from ExportWXR import *
+import unidecode
+import re
 
 
 class MyExportWXR(ExportWXR):
