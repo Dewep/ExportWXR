@@ -29,7 +29,7 @@ class MyExportWXR(ExportWXR):
     def get_comments(self, id_article):
         data = []
         with closing( self.db.cursor() ) as cursor:
-            cursor.execute("SELECT id, date, email, name, website, content, ip, is_active FROM `dewep_blog_commentaires` WHERE `id_article` = %d;" % id_article)
+            cursor.execute("SELECT `id`, `date`, `email`, `name`, `website`, `content`, `ip`, `is_active` FROM `dewep_blog_commentaires` WHERE `id_article` = %d;" % id_article)
             for row in cursor.fetchall():
                 subdata = dict()
                 subdata["id"] = row["id"]
